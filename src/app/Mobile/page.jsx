@@ -8,10 +8,9 @@ import Header from './Header';
 
 export default function Mobile() {
     return (
-        <main>
+        <main  >
             <LeftPane />
-            <div className=' '>
-
+            <div>
                 <Header />
                 <Form />
             </div>

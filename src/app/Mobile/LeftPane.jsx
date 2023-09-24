@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function LeftPane() {
     return (
-        <main className='flex mx-auto'>
+        <main className='flex mx-auto '>
 
             <div className='  h-full '>
 
