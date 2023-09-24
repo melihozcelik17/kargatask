@@ -6,32 +6,30 @@ import Image from 'next/image';
 
 export default function LeftPane() {
     return (
-        <main className='flex mx-auto '>
+        <main className=' '>
+            {/* fixed left-0 top-0 h-screen w-30 bg-[#0D1840] text-white p-3 space-y-2" style={{ zIndex: 10 }} */}
+            <div className='absolute left-0 top-0 h-screen w-30 text-white p-3 space-y-2 '>
 
-            <div className='  h-full '>
-
-                <div className="h-full p-3 space-y-2 w-60   ">
-                    <div className=" bg-[#0D1840] text-white flex items-start p-10 space-x-4">
+                <div className="absolute left-0 top-0 h-screen w-60  text-black p-3 space-y-2  ">
+                    <div className=" bg-[#0D1840] text-black   p-10 space-x-4">
                         <Image className=' items-start' src='/Rectangle 693.png' width={80}
                             height={76}
                             alt="avatar" />
-                        <div>
+                        <div className='text-white '>
                             <h2 className="text-lg font-semibold">Murat Turan</h2>
 
-                            <span className="flex space-x-1">
-                                <a rel="noopener noreferrer" href="#" className="text-xs hover:underline ">Tedarik Zinciri Yöneticisi</a>
+                            <span className=" space-x-1">
+                                <p rel="noopener noreferrer" href="#" className="text-xs hover:underline ">Tedarik Zinciri Yöneticisi</p>
                             </span>
                         </div>
 
-                        <label for="underline_select" class="sr-only">Underline select</label>
-                        <select id="underline_select" class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option selected>Dijital Mentor</option>
-                            <option value="US">Dijital Mentor</option>
-                        </select>
+
                     </div>
 
                     <div className="divide-y divide-gray-700">
                         <ul className="pt-2 pb-4 space-y-1 text-sm">
+
+                            <h1>MENU</h1>
                             <li className="dark:bg-gray-800 dark:text-gray-50">
                                 <a rel="noopener noreferrer" href="#" className="flex items-center p-2 space-x-3 rounded-md">
                                     <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +98,7 @@ export default function LeftPane() {
                             </li>
                             {/* </ul>
                         <ul className="pt-4 pb-2 space-y-1 text-sm"> */}
-
+                            <h1>TERCİHLER</h1>
                             <li>
                                 <a rel="noopener noreferrer" href="#" className="flex items-center p-2 space-x-3 rounded-md">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,6 +130,10 @@ export default function LeftPane() {
                                     <span>Gizlilik Politikası</span>
                                 </a>
                             </li>
+                            <Image className=' gap-2' src='/TIM_LOGO_TR 4.png' width={93}
+                                height={31}
+                                alt="Brand"
+                            />
                         </ul>
                     </div>
                 </div>

@@ -129,72 +129,80 @@ export default function Form() {
         setSavedData(updatedData);
     };
     return (
-        <main className="  ">
-            <div className=' '>
+        <main className='ml-60 ' >
+            <div className=' flex '>
+                <div className='w-1/2 p-4'>
 
-                <h1>GİRDİ ALANI  </h1>
-                <p>Lütfen salınım değerlerini hesaplamak için aşağıdaki alanları doldurun:</p>
-                <div>
+                    <h1>GİRDİ ALANI  </h1>
+                    <p>Lütfen salınım değerlerini hesaplamak için aşağıdaki alanları doldurun:</p>
+                    <div>
 
-                    <form className='flex g-4 flex-col w-1/2 justify-between  m-1.5 tracking-wider p-2.5  border-2 shadow overflow-hidden  divide-gray-200 ' onSubmit={(e) => handleSubmit(e)}>
-                        <label for="underline_select" className="sr-only">Underline select</label>
-                        <select name="facility" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option selected>Facility </option>
-                            <option value="Base factory">Base factory</option>
-                            <option value="Sub factory">Sub factory</option>
-                            <option value="Production factory">Production factory</option>
+                        <form className='flex g-4 flex-col w-1/2 justify-between  m-1.5 tracking-wider p-2.5  border-2 shadow overflow-hidden  divide-gray-200 ' onSubmit={(e) => handleSubmit(e)}>
+                            <label for="underline_select" className="sr-only">Underline select</label>
+                            <select name="facility" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                                <option selected>Facility </option>
+                                <option value="Base factory">Base factory</option>
+                                <option value="Sub factory">Sub factory</option>
+                                <option value="Production factory">Production factory</option>
 
-                        </select>
-                        <label for="underline_select" className="sr-only">Underline select</label>
-                        <select name="year" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option selected>Year</option>
-                            <option value="2023">2023</option>
-                            <option value="2022">2022</option>
-                            <option value="2021">2021</option>
-                            <option value="2020">2020</option>
-                        </select>
-                        <label for="underline_select" className="sr-only">Underline select</label>
-                        <select name="source_id" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option selected>Fuel Source</option>
-                            <option value="Yakıtlar">Yakıtlar</option>
-                            <option value="Biyoenerji">Biyoenerji</option>
+                            </select>
+                            <label for="underline_select" className="sr-only">Underline select</label>
+                            <select name="year" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                                <option selected>Year</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                            <label for="underline_select" className="sr-only">Underline select</label>
+                            <select name="source_id" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                                <option selected>Fuel Source</option>
+                                <option value="Yakıtlar">Yakıtlar</option>
+                                <option value="Biyoenerji">Biyoenerji</option>
 
-                        </select>
-                        <label for="underline_select" className="sr-only">Underline select</label>
-                        <select name="fuel_type_id" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option selected>Fuel Type</option>
-                            <option value="Gaz yakıtlar">Gaz yakıtlar</option>
-                            <option value="Sıvı yakıtlar">Sıvı yakıtlar</option>
-                            <option value="Katı yakıtlar">Katı yakıtlar</option>
-                            <option value="Biyoyakıt">Biyoyakıt</option>
-                            <option value="Biyokütle">Biyokütle</option>
-                            <option value="Biyogaz">Biyogaz</option>
-                        </select>
-                        <label for="underline_select" className="sr-only">Underline select</label>
-                        <select name="fuel_id" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option selected>Fuel</option>
-                            <option value="Bütan">Bütan</option>
-                            CNG                            <option value="CNG">CNG</option>
-                            <option value="LNG">LNG</option>
-                        </select>
-                        <label for="underline_select" className="sr-only">Underline select</label>
-                        <select name="amount" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option selected>Amount of Activity </option>
-                            <option value="1000000">1000000</option>
-                            <option value="2000000">2000000</option>
-                            <option value="3000000">3000000</option>
-                            <option value="4000000">4000000</option>
-                        </select>
-                        <select name="unit_id" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option selected> Unit </option>
-                            <option value="ton">ton</option>
-                            <option value="litre">litre</option>
-                            <option value="kWh (Net CV)">kWh (Net CV)</option>
-                            <option value="kWh (Gross CV)">kWh (Gross CV)</option>
-                        </select>
+                            </select>
+                            <label for="underline_select" className="sr-only">Underline select</label>
+                            <select name="fuel_type_id" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                                <option selected>Fuel Type</option>
+                                <option value="Gaz yakıtlar">Gaz yakıtlar</option>
+                                <option value="Sıvı yakıtlar">Sıvı yakıtlar</option>
+                                <option value="Katı yakıtlar">Katı yakıtlar</option>
+                                <option value="Biyoyakıt">Biyoyakıt</option>
+                                <option value="Biyokütle">Biyokütle</option>
+                                <option value="Biyogaz">Biyogaz</option>
+                            </select>
+                            <label for="underline_select" className="sr-only">Underline select</label>
+                            <select name="fuel_id" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                                <option selected>Fuel</option>
+                                <option value="Bütan">Bütan</option>
+                                CNG                            <option value="CNG">CNG</option>
+                                <option value="LNG">LNG</option>
+                            </select>
+                            <label for="underline_select" className="sr-only">Underline select</label>
+                            <select name="amount" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                                <option selected>Amount of Activity </option>
+                                <option value="1000000">1000000</option>
+                                <option value="2000000">2000000</option>
+                                <option value="3000000">3000000</option>
+                                <option value="4000000">4000000</option>
+                            </select>
+                            <select name="unit_id" onClick={handleChange} id="underline_select" className=" text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-nonefocus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                                <option selected> Unit </option>
+                                <option value="ton">ton</option>
+                                <option value="litre">litre</option>
+                                <option value="kWh (Net CV)">kWh (Net CV)</option>
+                                <option value="kWh (Gross CV)">kWh (Gross CV)</option>
+                            </select>
 
-                    </form>
-                    <div className=' flex flex-col w-1/2 '>
+                        </form>
+                    </div>
+                </div>
+                <div className="border-r "></div>
+
+                <div className='w-1/2 p-4' >
+                    <div className='  '>
+                        <h1>SONUÇ ALANI  </h1>
+                        <p>Girdi Alanı'nda girdiğiniz değerlere göre salınan gaz miktarları aşağıdaki gibidir:</p>
                         {resultData ? (
                             Object.values(resultData).map((item, index) => {
                                 console.log("item", item);
@@ -206,33 +214,27 @@ export default function Form() {
                         ) : (
                             <></>)}
                     </div>
-                    <button type="submit" className="bg-[#0D1840] rounded-2xl p-2 border text-white text-center hover:text-blue-700">Hesapla</button>
+                    <div className=' p-2'>
+
+                        <button type="submit" className="bg-[#0D1840] rounded-2xl p-2 border text-white text-center hover:text-blue-700">Hesapla</button>
+                        <a className=" bg-[#0D1840] rounded-2xl   p-2 border text-white text-center hover:text-blue-700" href="#" onClick={handleReset}>Sıfırla</a>
+                        <a className=" bg-[#0D1840] rounded-2xl  p-2 border text-white text-center hover:text-blue-700" href="#" onClick={handleSave}>Kaydet</a>
+                    </div>
                 </div>
-            </div>
 
-            <div className=' '>
-
-
-
-                <h1>SONUÇ ALANI  </h1>
-                <p>Girdi Alanı'nda girdiğiniz değerlere göre salınan gaz miktarları aşağıdaki gibidir:</p>
-                <div className=' p-2'>
-
-                    <a className=" bg-[#0D1840] rounded-2xl   p-2 border text-white text-center hover:text-blue-700" href="#" onClick={handleReset}>Sıfırla</a>
-                    <a className=" bg-[#0D1840] rounded-2xl  p-2 border text-white text-center hover:text-blue-700" href="#" onClick={handleSave}>Kaydet</a>
-                </div>
 
                 <div className=''>
                 </div>
-                hesaplamalar
             </div>
-            <div className="">
-                <div className="m-1.5 overflow-x-auto">
+            <div className="  ">
+                <p>Hesaplamalar</p>
+                <div className="m-1.5 overflow-x-auto shadow-md sm:rounded-lg">
                     <div className="p-1.5 min-w-full inline-block align-middle">
                         <div className="border rounded-lg shadow overflow-hidden">
                             <table className="min-w-full divide-y divide-gray-200">
                                 <thead className="bg-[#0D1840]">
                                     <tr className=' '>
+
                                         <th scope="col" className=" text-gray-500 uppercase">Facilty ID</th>
                                         <th scope="col" className=" text-gray-500 uppercase">Year</th>
                                         <th scope="col" className=" text-gray-500 uppercase">Fuel Type</th>
@@ -245,11 +247,13 @@ export default function Form() {
                                         <th scope="col" className=" text-gray-500 uppercase">CO2E</th>
                                         <th scope="col" className=" text-gray-500 uppercase"></th>
                                     </tr>
+
                                 </thead>
                                 <tbody className="divide-y divide-gray-200 ">
                                     {savedData.map((item, index) => (
+
                                         <tr key={index} className='mb-4 '>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm  text-gray-800 dark:text-gray-200">{item.facility}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">{item.facility}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">{item.year}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">{item.fuel_type_id}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">{item.fuel_id}</td>
@@ -257,8 +261,8 @@ export default function Form() {
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">{item.unit_id}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">{item.CO2}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">{item.CH4}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm ">{item.N2O}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm ">{item.CO2E}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">{item.N2O}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">{item.CO2E}</td>
 
                                             <td className="px-6 py-4 whitespace-nowrap text-sm ">
 

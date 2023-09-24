@@ -9,8 +9,8 @@ import Header from './Header';
 export default function Mobile() {
     return (
         <main  >
-            <LeftPane />
             <div>
+                <LeftPane />
                 <Header />
                 <Form />
             </div>

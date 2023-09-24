@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 export default function Header() {
     return (
-        <main>
-            <header className='flex  bg-white-800 text-black justify-between   '>
+        <main className='ml-60 '>
+            <header className='flex p-5 bg-white-800 text-black justify-between   '>
                 <div className=' flex items-center'>
 
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,18 +16,29 @@ export default function Header() {
                     <Image src='/Mask Group.png' width={80}
                         height={73}
                         alt="Picture of the author" />
-                    <option selected>Dijital Mentor</option>
-                    {/* dijital mentoru yap */}
-                    <h1>Merhaba Murat Bey,</h1>
-                    <h2>Talep etmiş olduğunuz tedarik zinciri raporunu oluşturdum. Bu alana tıklayarak rapora erişim sağlayabiliriniz.</h2>
+
+                    <div className=''>
+                        <div className=' ml-4  flex flex-col '>
+
+                            <h1 className=' px-40 font-semibold' >Merhaba Murat Bey,</h1>
+                            <h2 className='px-40  '>Talep etmiş olduğunuz tedarik zinciri raporunu oluşturdum. Bu alana tıklayarak rapora erişim sağlayabiliriniz.</h2>
+                        </div>
+                        <label for="underline_select" class="sr-only">Underline select</label>
+                        <select id="underline_select" class=" py-2.5 px-0  text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer  overflow-hidden divide-gray-200">
+                            <option selected>Dijital Mentor</option>
+                            <option value="US">Dijital Mentor</option>
+                        </select>
+                    </div>
                 </div>
             </header>
-            <div>
-                <h1>MOBILE COMBUSTION</h1>
-                <Image src='/3 11.png' width={80}
-                    height={73}
-                    alt="Picture of the author" />
+            <div className='bg-[#0D1840] rounded-bl-2xl rounded-br-2xl  text-white'>
                 <p>Scope 1</p>
+                <div className=' flex items-center text-center justify-center  '>
+                    <Image className='p-1' src='/3 11.png' width={80}
+                        height={73}
+                        alt="Picture of the author" />
+                    <h1>MOBILE COMBUSTION</h1>
+                </div>
 
             </div>
 
