@@ -6,15 +6,19 @@ import React, { useState } from "react";
 
 const QUESTIONS_DATA = [
     {
-        question: "Lorem ipsum dolor sit amet, ",
+        question: "What is outsourcing? ",
         answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-        question: "Lorem ipsum dolor sit amet, ",
+        question: "What do I need to get started on my project?",
         answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-        question: "Lorem ipsum dolor sit amet, ",
+        question: "How does the process of working on a project work? ",
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        question: "Why is it beneficial to outsource the art component? ",
         answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
 ]
@@ -37,21 +41,21 @@ export default function FAQ() {
 
 
     return (
-        <main className="">
-            <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
-                <div className="flex flex-col items-center">
-                    <h2 className="font-bold text-5xl mt-5 tracking-tight">
+        <main className=" ">
+            <div className="max-w-screen-xl mx-auto px-5 items-start bg-white min-h-sceen">
+                <div className="flex flex-col  ">
+                    <h2 className="font-bold text-5xl mt-5 text-center tracking-tight">
                         FAQ
                     </h2>
 
                 </div>
-                <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+                <div className="grid divide-y  items-start divide-neutral-200 max-w-xl mx-auto mt-8">
                     {QUESTIONS_DATA.map((item, index) => {
                         return (
                             <div className="py-5" key={item.index}>
                                 <details className={` ${openItemIndex === index ? 'group-open' : ''}`}>
                                     <summary
-                                        className="flex justify-between items-center font-medium cursor-pointer list-none"
+                                        className="flex  font-medium cursor-pointer list-none"
                                         onClick={() => toggleFAQ(index)}
                                     >
                                         <span> {item.question}</span>
