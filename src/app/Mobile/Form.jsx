@@ -203,20 +203,22 @@ export default function Form() {
                     <div className='  '>
                         <h1>SONUÇ ALANI  </h1>
                         <p>Girdi Alanı'nda girdiğiniz değerlere göre salınan gaz miktarları aşağıdaki gibidir:</p>
-                        {resultData ? (
-                            Object.values(resultData).map((item, index) => {
-                                console.log("item", item);
-                                return (
-
-                                    <h1 key={index} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/5 p-2.5 " > {item || 0}</h1>
-                                )
-                            })
-                        ) : (
-                            <></>)}
                     </div>
                     <div className=' p-2'>
+                        <div>
 
-                        <button type="submit" className="bg-[#0D1840] rounded-2xl p-2 border text-white text-center hover:text-blue-700">Hesapla</button>
+                            {resultData ? (
+                                Object.values(resultData).map((item, index) => {
+                                    console.log("item", item);
+                                    return (
+                                        <h1 key={index} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/5 p-2.5 " > {item || 0}</h1>
+                                    )
+                                })
+                            ) : (
+                                <></>)}
+                            <button type="submit" onClick={handleSubmit} className="bg-[#0D1840] rounded-2xl p-2 border text-white text-center hover:text-blue-700">Hesapla</button>
+                        </div>
+
                         <a className=" bg-[#0D1840] rounded-2xl   p-2 border text-white text-center hover:text-blue-700" href="#" onClick={handleReset}>Sıfırla</a>
                         <a className=" bg-[#0D1840] rounded-2xl  p-2 border text-white text-center hover:text-blue-700" href="#" onClick={handleSave}>Kaydet</a>
                     </div>
